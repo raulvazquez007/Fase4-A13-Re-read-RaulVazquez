@@ -1,0 +1,94 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #000;
+  }
+ 
+  header {
+    background-color: #004d40;
+    color: white;
+    padding: 10px 20px;
+  }
+ 
+  h1 {
+    margin: 0;
+  }
+ 
+  .logo-bar {
+    background-color: #00695c;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: white;
+  }
+ 
+  .col {
+    padding: 30px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+ 
+  .nav-col {
+    display: flex;
+    border-bottom: 2px solid #d66a3d;
+    padding-bottom: 10px;
+    margin: 20px 0;
+    gap: 15px;
+  }
+ 
+  .nav-col a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+  }
+ 
+  .nav-col a.active {
+    background-color: #f57c00;
+    color: white;
+    border-radius: 4px;
+  }
+ 
+  .precios {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+ 
+  .precios img {
+    max-width: 100px;
+    height: auto;
+  }
+ 
+  .sidebar {
+    margin-top: 2rem;
+  }
+ 
+  .sidebar h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+ 
+  .sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+ 
+  h3 {
+    margin-left: 50px;
+  }
+
+  .sidebar li {
+    background-color: #00796b;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+ 
+  footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #999;
+  }
