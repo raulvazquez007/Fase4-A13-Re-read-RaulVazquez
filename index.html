@@ -3,72 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Re-Read - eBooks</title>
-  <link rel="stylesheet" href="estilo.css" />
+  <title>Re-Read</title>
+  <link rel="stylesheet" href="css/reread.css" />
+  <style>
+    .pagina { display: none; }
+    .pagina.activa { display: block; }
+  </style>
 </head>
 <body>
   <header>
-    <h1>1.3) Página eBooks</h1>
+    <h1 id="titulo-pagina">1.1) Página Re-Read</h1>
     <div class="logo-bar">Re-Read</div>
   </header>
 
-  <main class="main-content">
-    <div class="intro">
-      <h1>Re–Read</h1>
-      <p>
-        En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos.
-        Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos
-        para que nunca te quedes sin ninguno de los dos.
-      </p>
-    </div>
+  <nav class="menu nav-col">
+    <a href="#" onclick="mostrarPagina('re-read', '1.1')">Re-Read</a>
+    <a href="#" onclick="mostrarPagina('libros', '1.2')">Libros</a>
+    <a href="#" onclick="mostrarPagina('ebooks', '1.3')">eBooks</a>
+  </nav>
 
-    <nav class="menu">
-      <a href="reread.html">Re-Read</a>
-      <a href="libros.html">Libros</a>
-      <a href="ebooks.html" class="active">eBooks</a>
-    </nav>
+  <!-- PÁGINA 1: Re-Read -->
+  <div id="re-read" class="pagina activa">
+    <main class="main-content">
+      <div class="content-area">
+        <section class="mensaje">
+          <section class="intro">
+            <h2>Re-Read</h2>
+            <p>
+              En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos.
+              Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
+            </p>
+          </section>
 
-    <div class="content-area">
-      <section class="ebooks">
-        <h2>Toda la actualidad en eBook</h2>
-        <div class="grid-ebooks">
-          <div class="ebook">
-            <img src="./imagenes/cell.jpeg" alt="Stephen King - Cell" />
-            <p>A través de los teléfonos móviles se extiende una señal que convierte a los usuarios en esclavos.</p>
-          </div>
-          <div class="ebook">
-            <img src="./imagenes/elciclodelhombrelobo.jpeg" alt="Stephen King - El ciclo del hombre lobo" />
-            <p>Una escalofriante parábola del mal. Una excelente historia de la literatura de terror.</p>
-          </div>
-          <div class="ebook">
-            <img src="./imagenes/elresplandor.jpeg" alt="Stephen King - El Resplandor" />
-            <p>Una de las palabras que Danny escuchó con más fuerza, sabiendo que era un mensaje de horror...</p>
-          </div>
-          <div class="ebook">
-            <img src="./imagenes/doctorsleep.jpeg" alt="Stephen King - Doctor Sueño" />
-            <p>Una novela que emocionará a los seguidores de *El resplandor* y conquistará a los nuevos lectores.</p>
-          </div>
-          <div class="ebook">
-            <img src="./imagenes/mientrasescribo.jpeg" alt="Stephen King - Mientras escribo" />
-            <p>Pocas veces un libro sobre el oficio de escribir ha resultado tan clarificador y honesto.</p>
-          </div>
-        </div>
-      </section>
+          <h3>Nunca la lectura ha sido tan necesaria</h3>
+          <p>
+            En estos tiempos difíciles Re-Read se suma al mensaje de <strong>#yomequedoencasa</strong> por el bien común de la sociedad.
+          </p>
 
-      <aside class="sidebar">
-        <h3>Top ventas</h3>
-        <ul>
-          <li>Cien años de soledad.</li>
-          <li>Crónica de una muerte anunciada.</li>
-          <li>El otoño del patriarca.</li>
-          <li>El general en su laberinto.</li>
-        </ul>
-      </aside>
-    </div>
-  </main>
+          <h3>Reduce & Reuse & Read</h3>
+          <p>
+            Somos la librería Eco-Friendly — Re-Read nació pensando en verde con el objetivo de compartir una pasión, la lectura y para expresar una preocupación:
+            si queremos construir un futuro sostenible, es necesario que reduzcamos el consumo y que reutilicemos cuantos más objetos materiales mejor.
+          </p>
+        </section>
 
-  <footer>
-    <p>© Re-Read</p>
-  </footer>
+        <aside class="sidebar">
+          <h3>Top ventas</h3>
+          <ul>
+            <li>Cien años de soledad.</li>
+            <li>Crónica de una muerte anunciada.</li>
+            <li>El otoño del patriarca.</li>
+            <li>El general en su laberinto.</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer><p>© Re-Read</p></footer>
+  </div>
+
+  <!-- PÁGINA 2: Libros -->
+  <div id="libros" class="pagina">
+    <main class="main-content">
+      <div class="content-area">
+        <section class="mensaje">
+          <section class="intro">
+            <h2>Re–Read</h2>
+            <p>
+              En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos.
+              Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
+            </p>
+          </section>
+
+          <h2>Todos los libros tienen el mismo precio</h2>
+          <p>Libros casi nuevos a un precio casi imposible.</p>
+          <div class="precios">
+            <img src="imagenes/1-libro-3€.gif" alt="1 libro - 3€" />
+            <img src="imagenes/2-libros-5€.gif" alt="2 libros - 5€" />
+            <img src="imagenes/5-libros-10€.gif" alt="5 libros - 10€" />
+          </div>
+
+          <h3>¿Te cambias de piso? ¿Tienes que vaciar la casa? ¿O sencillamente necesitas algo más de espacio?</h3>
+          <p>
+            En Re-Read compramos tus libros para darles una segunda vida. Los compramos todos al mismo precio: 0,20 euros.
+            Siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos para que nunca te quedes sin ninguno de los dos.
+          </p>
+        </section>
+
+        <aside class="sidebar">
+          <h3>Top ventas</h3>
+          <ul>
+            <li>Cien años de soledad.</li>
+            <li>Crónica de una muerte anunciada.</li>
+            <li>El otoño del patriarca.</li>
+            <li>El general en su laberinto.</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer><p>© Re-Read</p></footer>
+  </div>
+
+  <!-- PÁGINA 3: eBooks -->
+  <div id="ebooks" class="pagina">
+    <main class="main-content">
+      <div class="content-area">
+        <section class="mensaje">
+          <section class="intro">
+            <h1>Re–Read</h1>
+            <p>
+              En Re-Read podrás encontrar libros de segunda mano en perfecto estado. También vender los tuyos.
+              Porque siempre hay libros leídos y libros por leer. Por eso Re-compramos y Re-vendemos
+              para que nunca te quedes sin ninguno de los dos.
+            </p>
+          </section>
+
+          <section class="ebooks seccion-ebooks">
+            <h2>Toda la actualidad en eBook</h2>
+            <div class="grid-ebooks">
+              <div class="ebook">
+                <img src="imagenes/cell.jpeg" alt="Stephen King - Cell" />
+                <p>A través de los teléfonos móviles se extiende una señal que convierte a los usuarios en esclavos.</p>
+              </div>
+              <div class="ebook">
+                <img src="imagenes/elciclodelhombrelobo.jpeg" alt="Stephen King - El ciclo del hombre lobo" />
+                <p>Una escalofriante parábola del mal. Una excelente historia de la literatura de terror.</p>
+              </div>
+              <div class="ebook">
+                <img src="imagenes/elresplandor.jpeg" alt="Stephen King - El Resplandor" />
+                <p>Una de las palabras que Danny escuchó con más fuerza, sabiendo que era un mensaje de horror...</p>
+              </div>
+              <div class="ebook">
+                <img src="imagenes/doctorsleep.jpeg" alt="Stephen King - Doctor Sueño" />
+                <p>Una novela que emocionará a los seguidores de *El resplandor* y conquistará a los nuevos lectores.</p>
+              </div>
+              <div class="ebook">
+                <img src="imagenes/mientrasescribo.jpeg" alt="Stephen King - Mientras escribo" />
+                <p>Pocas veces un libro sobre el oficio de escribir ha resultado tan clarificador y honesto.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <aside class="sidebar">
+          <h3>Top ventas</h3>
+          <ul>
+            <li>Cien años de soledad.</li>
+            <li>Crónica de una muerte anunciada.</li>
+            <li>El otoño del patriarca.</li>
+            <li>El general en su laberinto.</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer><p>© Re-Read</p></footer>
+  </div>
+
+  <script>
+    function mostrarPagina(id, numero) {
+      const paginas = document.querySelectorAll('.pagina');
+      paginas.forEach(p => p.classList.remove('activa'));
+      document.getElementById(id).classList.add('activa');
+      const titulo = id === 're-read' ? 'Re-Read' : id.charAt(0).toUpperCase() + id.slice(1);
+      document.getElementById('titulo-pagina').innerText = `${numero}) Página ${titulo}`;
+    }
+  </script>
 </body>
 </html>
