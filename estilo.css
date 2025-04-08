@@ -144,53 +144,48 @@ body {
     border-radius: 5px;
   }
   
-  /* Peu de pàgina */
-  footer {
-    text-align: center;
-    margin-top: 3rem;
-    color: #999;
-  }
   
-  /* RESPONSIVE DESIGN */
-  @media screen and (max-width: 992px) {
-    .sidebar {
-      position: static;
-      width: 100%;
-      margin-top: 2rem;
-      padding: 0 20px;
-    }
-  
-    .grid-ebooks {
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-  
-    main h1 {
-      font-size: 2.2em;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .nav-col {
+  @media screen and (max-width: 700px) {
+    /* Cambia el menú a columna */
+    .menu {
       flex-direction: column;
+      align-items: center;
       gap: 10px;
-      align-items: flex-start;
     }
   
-    .grid-ebooks {
-      grid-template-columns: 1fr;
+    .menu a {
+      width: 100%;
+      text-align: center;
     }
   
-    .sidebar li {
-      font-size: 0.85em;
-      padding: 0.8rem;
+    /* Acomoda el contenido en columna */
+    .content-area {
+      flex-direction: column;
     }
   
+    .sidebar {
+      width: 100%;
+      margin-top: 0px;
+      margin-top: -250px;
+    }
+  
+    /* Ajusta tamaños de texto para pantallas pequeñas */
     main p {
       font-size: 0.9em;
+      text-align: justify;
+    }
+  
+    .mensaje h3 {
+      font-size: 1em;
     }
   
     .ebook p {
-      font-size: 0.8em;
+      font-size: 0.85em;
+    }
+  
+    .sidebar li {
+      font-size: 0.9em;
+      padding: 0.9rem;
     }
   
     .logo-bar {
@@ -198,11 +193,31 @@ body {
       text-align: center;
     }
   
-    main h1 {
+    main h1,
+    .intro h2 {
       font-size: 1.8em;
     }
   
-    .seccion-ebooks h2 {
-      font-size: 1em;
+    .menu a.active {
+      font-weight: bold;
     }
+  
+    .grid-ebooks {
+      grid-template-columns: 1fr;
+    }
+
+    .precios {
+        flex-direction: row;
+        align-items: center;
+      }
+
+    .grid-ebooks {
+      gap: 15px;
+     }
+     .intro {
+        text-align: center;
+        margin: 10px auto;
+        margin-left: 10%;
+      }
   }
+  
