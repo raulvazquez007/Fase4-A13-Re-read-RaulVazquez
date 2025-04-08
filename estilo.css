@@ -24,7 +24,7 @@ body {
   /* Contingut principal */
   .main-content {
     padding: 30px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
   }
   
