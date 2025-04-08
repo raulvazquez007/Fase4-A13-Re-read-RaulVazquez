@@ -121,10 +121,10 @@ body {
     flex: 1;
   }
   
-  .sidebar h3 {
+  /* .sidebar h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
-  }
+  } */
   
   .sidebar ul {
     list-style: none;
